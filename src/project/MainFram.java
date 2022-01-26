@@ -1,6 +1,5 @@
 package project;
 
-import java.awt.Color;
 import java.awt.Container;
 
 import javax.swing.JFrame;
@@ -20,6 +19,7 @@ public class MainFram extends JFrame{
 		
 		c.add(pm);
 		setVisible(true);
+		
 	}
 	
 	public static void main(String[] args) {

@@ -16,14 +16,13 @@ public class GamePlayMain {
 		Scanner scan = new Scanner(System.in);
 		GamePlay gamePlay = new GamePlay();
 
-
 //		for (int gameCnt = 0; gameCnt < 10; gameCnt++) {
 			gamePlay.makeRandomNumber();
 //			System.out.println((gameCnt + 1) + "번째 문제");
 			question = gamePlay.makeQuiz();
-			System.out.print("문제 >> ");
-			System.out.print(question);
-			System.out.println();
+//			System.out.print("문제 >> ");
+//			System.out.print(question);
+//			System.out.println();
 
 			answer = gamePlay.makeAnswer();
 //			System.out.println(answer); //정답 출력해봄
