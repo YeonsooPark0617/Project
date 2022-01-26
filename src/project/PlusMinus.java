@@ -53,6 +53,7 @@ public class PlusMinus extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				choiceBtn[0].setBackground(Color.RED);
 				if (gp.answer == Integer.parseInt(choiceBtn[0].getText())) {
+					gp.count++;
 					checkLabel.setVisible(true);
 					revalidate();
 					repaint();
@@ -70,6 +71,7 @@ public class PlusMinus extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				choiceBtn[1].setBackground(Color.RED);
 				if (gp.answer == Integer.parseInt(choiceBtn[1].getText())) {
+					gp.count++;
 					checkLabel.setVisible(true);
 					revalidate();
 					repaint();
@@ -86,6 +88,7 @@ public class PlusMinus extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				choiceBtn[2].setBackground(Color.RED);
 				if (gp.answer == Integer.parseInt(choiceBtn[2].getText())) {
+					gp.count++;
 					checkLabel.setVisible(true);
 					revalidate();
 					repaint();
@@ -102,6 +105,7 @@ public class PlusMinus extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 				choiceBtn[3].setBackground(Color.RED);
 				if (gp.answer == Integer.parseInt(choiceBtn[3].getText())) {
+					gp.count++;
 					checkLabel.setVisible(true);
 					revalidate();
 					repaint();
