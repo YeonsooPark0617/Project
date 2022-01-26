@@ -1,7 +1,7 @@
 package project;
 
+import java.awt.Color;
 import java.awt.Container;
-import java.util.Scanner;
 
 import javax.swing.JFrame;
 
@@ -13,6 +13,7 @@ public class MainFram extends JFrame{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("더하기 빼기");
 		setSize(1024,768);
+
 		c = getContentPane();
 		
 		pm = new PlusMinus();
@@ -20,14 +21,6 @@ public class MainFram extends JFrame{
 		c.add(pm);
 		setVisible(true);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	public static void main(String[] args) {
 			new MainFram();

@@ -19,9 +19,9 @@ public class GamePlay {
 	public String makeQuiz() {
 		int randomSign = (int) (random.nextInt(10000)) % 2; // 부호 결정
 		if (number1 > number2) { // 연산결과가 음수값이 나오지 않게 하기 위해 조건을 걸어줌
-			form = number1 + sign[randomSign] + number2;
+			form = String.format("%2d %s %2d",number1, sign[randomSign], number2);
 		} else {
-			form = number1 + sign[0] + number2;
+			form = String.format("%2d %s %2d",number1, sign[0], number2);
 		}
 		return form;
 	}
