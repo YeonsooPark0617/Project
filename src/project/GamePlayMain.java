@@ -3,10 +3,10 @@ package project;
 import java.util.Scanner;
 
 public class GamePlayMain {
-	int count = 0; // 문제 정답/오답 카운트
-	String question;
+	int count = 0; // 문제 정답 카운트
+	String question; //문제
 	int answer = 0; // 정답
-	int[] answerArr = new int[4];
+	int[] answerArr = new int[4]; //4개의 정답 선지를 담는 배열
 	
 	public GamePlayMain() {
 		run();

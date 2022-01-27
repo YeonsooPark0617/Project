@@ -19,7 +19,6 @@ public class MainFram extends JFrame{
 		
 		c.add(pm);
 		setVisible(true);
-		
 	}
 	
 	public static void main(String[] args) {
