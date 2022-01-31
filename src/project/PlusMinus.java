@@ -15,13 +15,13 @@ public class PlusMinus extends GameContainer {
 	GamePlayMain gp = new GamePlayMain();
 	JLabel bgLabel; // 가장 밑배경(초록잔디)
 	JLabel pmbgLabel; // 게임 배경(하얀색 메모장)
-	JLabel quizLabel; // 문제 나오는 곳 라벨( num + num ) 
+	JLabel quizLabel; // 문제 나오는 곳 라벨( num + num )
 
 	JButton[] choiceBtn; // 4개의 선지
 	JLabel checkLabel; // 정답일 경우 나오는 체크표시
 	JLabel xLabel; // 오답일 경우 나오는 엑스표시
 	JButton pauseBtn; // 멈춤 버튼
-	
+
 	public PlusMinus() {
 		gamePlay();
 	}
@@ -51,7 +51,7 @@ public class PlusMinus extends GameContainer {
 			choiceBtn[i].setFont(new Font("Gothic", Font.BOLD, 70));
 			choiceBtn[i].setForeground(Color.WHITE);
 		}
-		
+
 		choiceBtn[0].setBounds(330, 350, 150, 70);
 		choiceBtn[1].setBounds(550, 350, 150, 70);
 		choiceBtn[2].setBounds(330, 450, 150, 70);
@@ -65,8 +65,8 @@ public class PlusMinus extends GameContainer {
 
 		pauseBtn = new JButton(pauseIcon);
 		pauseBtn.setBounds(920, 30, 50, 50);
-		pauseBtn.setBorderPainted(false);    // 버튼의 외곽 투명하게 
-		pauseBtn.setContentAreaFilled(false);  // 만들어 주는 것
+		pauseBtn.setBorderPainted(false); // 버튼의 외곽 투명하게
+		pauseBtn.setContentAreaFilled(false); // 만들어 주는 것
 
 		checkLabel.setBounds(670, 65, 150, 150);
 		this.add(checkLabel);
@@ -93,6 +93,19 @@ public class PlusMinus extends GameContainer {
 		choiceBtn[2].addActionListener(this);
 		choiceBtn[3].addActionListener(this);
 		pauseBtn.addActionListener(this);
+	}
+	
+	@Override
+	public void reGame() {
+		gp = new GamePlayMain();
+
+		quizLabel.setText(gp.question);
+		for (int i = 0; i < gp.answerArr.length; i++) {
+			choiceBtn[i].setText(Integer.toString(gp.answerArr[i]));
+			choiceBtn[i].setBackground(Color.orange);
+		}
+		checkLabel.setVisible(false);
+		xLabel.setVisible(false);
 	}
 
 	@Override
@@ -158,7 +171,8 @@ public class PlusMinus extends GameContainer {
 			}
 		}
 		if (e.getSource() == pauseBtn) {
-			JOptionPane.showMessageDialog(pauseBtn, "정지!"); // 이벤트 처리를 위해 임시동작
+//			JOptionPane.showMessageDialog(pauseBtn, "정지!"); // 이벤트 처리를 위해 임시동작
+			reGame();
 		}
 
 	}

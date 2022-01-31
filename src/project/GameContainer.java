@@ -10,5 +10,9 @@ public abstract class GameContainer extends JPanel implements ActionListener{
 	   
 	   @Override
 	   public abstract void actionPerformed(ActionEvent e);
+	   
+	   public void reGame() {
+			System.out.println("game replay....");
+		}
 
 	}
