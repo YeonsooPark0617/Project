@@ -1,9 +1,7 @@
 package jframe;
 
 import java.awt.Container;
-
 import javax.swing.JFrame;
-
 import cardgame.CardGame;
 
 public class MyJFrame_Card extends JFrame {

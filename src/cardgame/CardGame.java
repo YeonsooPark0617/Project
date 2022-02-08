@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-import cupgame.GameHowTo;
+import cardgame.GameHowTo;
 import cupgame.RoundJButton;
 import jframe.GameContainer;
 

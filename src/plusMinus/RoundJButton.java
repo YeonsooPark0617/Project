@@ -50,7 +50,7 @@ public class RoundJButton extends JButton {
 		if (getModel().isArmed()) {
 			graphics.setColor(getBackground().darker());
 		} else if (getModel().isRollover()) {
-			graphics.setColor(getBackground().brighter());
+			graphics.setColor(getBackground().darker());
 		} else {
 			graphics.setColor(getBackground());
 		}

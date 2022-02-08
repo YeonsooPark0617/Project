@@ -48,7 +48,7 @@ public class PlusMinus extends GameContainer {
 		
 		quizLabel = new JLabel(gp.question);
 		quizLabel.setFont(new Font("Gothic", Font.BOLD, 115));
-		quizLabel.setForeground(Color.ORANGE);
+		quizLabel.setForeground(new Color(255, 127, 0));
 		quizLabel.setBounds(315, 140, 400, 200);
 
 		choiceBtn = new JButton[4];
@@ -111,15 +111,17 @@ public class PlusMinus extends GameContainer {
 			if(click == 1) {
 				return;
 			}
-			choiceBtn[0].setBackground(Color.RED);
+//			choiceBtn[0].setBackground(Color.RED);     /////삭제
 			if (gp.answer == Integer.parseInt(choiceBtn[0].getText())) {
 				gp.count++;
 				click++;
+				choiceBtn[0].setBackground(new Color(33, 139, 34));   ////////////수정
 				checkLabel.setVisible(true);
 				revalidate();
 				repaint();
 			} else {
 				click++;
+				choiceBtn[0].setBackground(Color.red);   ////////////수정
 				xLabel.setVisible(true);
 				revalidate();
 				repaint();
@@ -129,15 +131,17 @@ public class PlusMinus extends GameContainer {
 			if(click == 1) {
 				return;
 			}
-			choiceBtn[1].setBackground(Color.RED);
+//			choiceBtn[1].setBackground(Color.RED);   /////삭제
 			if (gp.answer == Integer.parseInt(choiceBtn[1].getText())) {
 				gp.count++;
 				click++;
+				choiceBtn[1].setBackground(new Color(33, 139, 34)); ////////////수정
 				checkLabel.setVisible(true);
 				revalidate();
 				repaint();
 			} else {
 				click++;
+				choiceBtn[1].setBackground(new Color(233, 23, 22));  ////////////수정
 				xLabel.setVisible(true);
 				revalidate();
 				repaint();
@@ -147,15 +151,17 @@ public class PlusMinus extends GameContainer {
 			if(click == 1) {
 				return;
 			}
-			choiceBtn[2].setBackground(Color.RED);
+//			choiceBtn[2].setBackground(Color.RED);   /////삭제
 			if (gp.answer == Integer.parseInt(choiceBtn[2].getText())) {
 				gp.count++;
 				click++;
+				choiceBtn[2].setBackground(new Color(33, 139, 34));   ////////////수정
 				checkLabel.setVisible(true);
 				revalidate();
 				repaint();
 			} else {
 				click++;
+				choiceBtn[2].setBackground(new Color(233, 23, 22));  ////////////수정
 				xLabel.setVisible(true);
 				revalidate();
 				repaint();
@@ -165,15 +171,17 @@ public class PlusMinus extends GameContainer {
 			if(click == 1) {
 				return;
 			}
-			choiceBtn[3].setBackground(Color.RED);
+//			choiceBtn[3].setBackground(Color.RED);   /////삭제
 			if (gp.answer == Integer.parseInt(choiceBtn[3].getText())) {
 				gp.count++;
 				click++;
-				checkLabel.setVisible(true);
+				choiceBtn[3].setBackground(new Color(33, 139, 34));  ////////////수정
+				checkLabel.setVisible(true); 
 				revalidate();
 				repaint();
 			} else {
 				click++;
+				choiceBtn[3].setBackground(new Color(233, 23, 22));   ////////////수정
 				xLabel.setVisible(true);
 				revalidate();
 				repaint();

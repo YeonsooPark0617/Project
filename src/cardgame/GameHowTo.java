@@ -1,4 +1,4 @@
-package cupgame;
+package cardgame;
 
 import java.awt.Color;
 import java.awt.Font;
