@@ -45,7 +45,7 @@ public class GameHowTo extends JPanel implements ActionListener{
 	}
 
 	public void comm() {
-		bgSK = new ImageIcon("images/howtobg.png");
+		bgSK = new ImageIcon("images/HowTo_background.png");
 		bgSkPan = new JLabel(bgSK);
 		bgSkPan.setBounds(0, 0, 820, 525);
 		bgSkPan.setLayout(null);
@@ -85,7 +85,7 @@ public class GameHowTo extends JPanel implements ActionListener{
 		pan1.setBounds(130, 10, 570, 505);
 		pan1.setBackground(Color.white);
 		
-		ImageIcon gameImg = new ImageIcon("images/cardgame_how1_border.png");
+		ImageIcon gameImg = new ImageIcon("images/HowTo_Card1.png");
 		JLabel gameImgPan = new JLabel(gameImg);
 		gameImgPan.setBounds(10, 10, 550, 390);
 
@@ -107,7 +107,7 @@ public class GameHowTo extends JPanel implements ActionListener{
 		pan2.setBounds(130, 10, 570, 505);
 		pan2.setBackground(Color.white);
 		
-		ImageIcon gameImg = new ImageIcon("images/cardgame_how2_border.png");
+		ImageIcon gameImg = new ImageIcon("images/HowTo_Card2.png");
 		JLabel gameImgPan = new JLabel(gameImg);
 		gameImgPan.setBounds(10, 10, 550, 390);
 		
@@ -130,7 +130,7 @@ public class GameHowTo extends JPanel implements ActionListener{
 		pan3.setBounds(130, 10, 570, 505);
 		pan3.setBackground(Color.white);
 
-		ImageIcon gameImg = new ImageIcon("images/cardgame_how3_border.png");
+		ImageIcon gameImg = new ImageIcon("images/HowTo_Card3.png");
 		JLabel gameImgPan = new JLabel(gameImg);
 		gameImgPan.setBounds(10, 10, 550, 390);
 		

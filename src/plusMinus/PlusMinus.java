@@ -36,7 +36,7 @@ public class PlusMinus extends GameContainer {
 		bgLabel = new JLabel(bgicon);
 		bgLabel.setBounds(0, 0, 1024, 768);
 
-		ImageIcon pmicon = new ImageIcon("projectImages/gamebackImg.png");
+		ImageIcon pmicon = new ImageIcon("projectImages/sketchbook_PlusMinus.png");
 		pmbgLabel = new JLabel(pmicon);
 		pmbgLabel.setBounds(155, 60, 700, 600);
 

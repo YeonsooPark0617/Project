@@ -25,8 +25,8 @@ import jframe.GameContainer;
 
 public class CardGame extends GameContainer {
 
-	ImageIcon backIcon = new ImageIcon("images/background.png");
-	ImageIcon gameBackIcon = new ImageIcon("images/gamebackImg.png");
+	ImageIcon backIcon = new ImageIcon("images/backgroundImg.png");
+	ImageIcon gameBackIcon = new ImageIcon("images/sketchbook_Card.png");
 	ImageIcon startBackIcon = new ImageIcon("images/startback.png");
 	ImageIcon pauseIcon = new ImageIcon("images/pause.png");
 	ImageIcon checkIcon = new ImageIcon("images/checked.png");
@@ -42,8 +42,8 @@ public class CardGame extends GameContainer {
 	JButton pauseBtn;
 	JButton[] Btn = new JButton[12]; // 카드 12개
 	String[] img = { // 카드 이미지 주소 배열
-			"img01.png", "img02.png", "img03.png", "img04.png", "img05.png", "img06.png", "img01.png", "img02.png",
-			"img03.png", "img04.png", "img05.png", "img06.png" };
+			"card1.png", "card2.png", "card3.png", "card4.png", "card5.png", "card6.png", "card1.png", "card2.png",
+			"card3.png", "card4.png", "card5.png", "card6.png" };
 
 	int sucessCount = 0;
 	int buttonIndexSave1 = 0; // 먼저 선택된 카드 인덱스 저장
@@ -65,7 +65,7 @@ public class CardGame extends GameContainer {
 			Btn[i].setBorder(null);
 			Btn[i].setBackground(Color.white);
 			Btn[i].addActionListener(this);
-			Btn[i].setIcon(chageImage("leaf.png"));
+			Btn[i].setIcon(chageImage("card_Leaf.png"));
 			Btn[i].setEnabled(false);
 			cardBack.add(Btn[i]);
 		}
@@ -104,7 +104,7 @@ public class CardGame extends GameContainer {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				for (int i = 0; i < Btn.length; i++) {
-					Btn[i].setIcon(chageImage("leaf.png"));
+					Btn[i].setIcon(chageImage("card_Leaf.png"));
 				}
 				timer.stop();
 			}
@@ -219,8 +219,8 @@ public class CardGame extends GameContainer {
 
 				openCount = 0;
 
-				Btn[buttonIndexSave1].setIcon(chageImage("leaf.png"));
-				Btn[buttonIndexSave2].setIcon(chageImage("leaf.png"));
+				Btn[buttonIndexSave1].setIcon(chageImage("card_Leaf.png"));
+				Btn[buttonIndexSave2].setIcon(chageImage("card_Leaf.png"));
 
 				timer.stop();
 			}

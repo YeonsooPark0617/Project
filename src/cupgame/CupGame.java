@@ -18,8 +18,8 @@ import jframe.GameContainer;
 
 public class CupGame extends GameContainer {
 
-	ImageIcon backIcon = new ImageIcon("images/background.png");
-	ImageIcon gameBagIcon = new ImageIcon("images/cupgamebackImg.png");
+	ImageIcon backIcon = new ImageIcon("images/backgroundImg.png");
+	ImageIcon gameBagIcon = new ImageIcon("images/sketchbook_Cup.png");
 	ImageIcon cupIcon = new ImageIcon("images/cup.png");
 	ImageIcon ballIcon = new ImageIcon("images/ball.png");
 	ImageIcon pauseIcon = new ImageIcon("images/pause.png");
