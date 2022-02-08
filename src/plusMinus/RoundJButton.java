@@ -1,4 +1,4 @@
-package project;
+package plusMinus;
 
 import java.awt.FontMetrics;
 import java.awt.Graphics;
